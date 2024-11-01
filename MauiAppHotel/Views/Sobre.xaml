@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre" NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Orange}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+
+        <Label 
+            Text="Sobre Hotel!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontFamily="Kalam"
+               FontSize="50"
+               TextColor="{StaticResource Primary}" />
+        <Image Source="hotel_bot.png"
+               WidthRequest="200" 
+               HeightRequest="200"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <Label Text="Bem vindo ao Hotel que atende às necessidades, 
+               supera as expectativas e surpreende a todos seus hóspedes e clientes;seja em viagens a negócios ou a lazer."
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="10" />
+
+        <Label Text="Desenvolvido por AnClockup, 2024."
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="10" />
+
+        <Frame Padding="10">
+            <VerticalStackLayout>
+
+                <Button Text="Avançar" Clicked="Button_Clicked" />
+
+            </VerticalStackLayout>
+         </Frame>
+
+
+     </VerticalStackLayout>
+</ContentPage>
